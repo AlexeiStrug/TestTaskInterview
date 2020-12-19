@@ -12,7 +12,7 @@ import java.util.Date;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "password_reset_token", schema = "public", catalog = "postgres")
+@Table(name = "password_reset_token")
 public class PasswordResetToken extends BaseEntity {
 
     private static final int EXPIRATION = 60 * 24;

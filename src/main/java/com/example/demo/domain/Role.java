@@ -12,7 +12,7 @@ import java.util.Set;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "roles", schema = "public", catalog = "postgres")
+@Table(name = "roles")
 public class Role extends BaseEntity {
 
     @Builder

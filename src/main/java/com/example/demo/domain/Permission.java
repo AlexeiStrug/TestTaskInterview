@@ -14,7 +14,7 @@ import java.util.Set;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "permissions", schema = "public", catalog = "postgres")
+@Table(name = "permissions")
 public class Permission extends BaseEntity {
 
     @Builder

@@ -10,7 +10,7 @@ import java.sql.Timestamp;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "users", schema = "public", catalog = "postgres")
+@Table(name = "users")
 public class User extends BaseEntity {
 
     @Builder
