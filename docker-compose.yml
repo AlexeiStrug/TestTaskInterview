@@ -1,0 +1,28 @@
+version: "3"
+services:
+  app:
+    build: .
+    container_name: simple-task-java
+    environment:
+      - server.port=8080
+      - spring.datasource.url=jdbc:postgresql://db:5432/test
+      - spring.datasource.username=postgres
+      - spring.datasource.password=mysecretpassword
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+  db:
+    image: postgres
+    container_name: db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=mysecretpassword
+      - POSTGRES_DB=test
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:

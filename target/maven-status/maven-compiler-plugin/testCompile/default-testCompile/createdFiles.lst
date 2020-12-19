@@ -1,0 +1,6 @@
+com\example\demo\services\CheckUserTokenTest.class
+com\example\demo\services\PermissionServiceTest.class
+com\example\demo\services\AuthServiceTest.class
+com\example\demo\services\UserServiceTest.class
+com\example\demo\services\RoleServiceTest.class
+com\example\demo\utils\InitData.class
